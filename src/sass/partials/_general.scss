@@ -1,9 +1,16 @@
+body{
+  font-weight: 100;
+  font-size: $ukuranHuruf;
+  line-height: 20px;
+}
+
 // header
 #header{
   border-top:solid 5px $biru;
   // border-bottom: solid 1px #ddd;
   #logo{
     float: left;
+    // width: 30%;
   }
   nav{
     float:right;
@@ -38,4 +45,16 @@
 #slide{
   height: 400px;
   overflow: hidden;
+}
+
+// konten-atas
+#konten-atas{
+  background: #eee;
+  padding: $standardPadding;
+  font-size: $ukuranHuruf;
+}
+
+#footer{
+  background: #444;
+  color:#fff;
 }

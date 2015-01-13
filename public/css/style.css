@@ -1799,6 +1799,12 @@ img {
     margin-left: 0;
   }
 }
+body {
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 #header {
   border-top: solid 5px #1FACD7;
 }
@@ -1838,4 +1844,15 @@ img {
 #slide {
   height: 400px;
   overflow: hidden;
+}
+
+#konten-atas {
+  background: #eee;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+#footer {
+  background: #444;
+  color: #fff;
 }
