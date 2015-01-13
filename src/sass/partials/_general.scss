@@ -49,9 +49,15 @@ body{
 
 // konten-atas
 #konten-atas{
-  background: #eee;
+  background: lighten(#eee,3%);
   padding: $standardPadding;
   font-size: $ukuranHuruf;
+  text-align: center;
+  i{
+    font-size: 5em;
+    display: block;
+  }
+  h3,p{margin:0}
 }
 
 #footer{
