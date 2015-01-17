@@ -1843,7 +1843,47 @@ body {
 
 #slide {
   height: 400px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: none;
+  position: relative;
+  overflow: auto;
+}
+#slide li {
+  list-style-type: none;
+}
+#slide ul {
+  margin: 0;
+  padding: 0;
+}
+#slide ul li {
+  float: left;
+}
+#slide .dots {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+#slide .dots li {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .4;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+#slide .dots li.active {
+  background: #fff;
+  opacity: 1;
 }
 
 #konten-atas {

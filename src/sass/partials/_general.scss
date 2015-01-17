@@ -44,7 +44,45 @@ body{
 // slider
 #slide{
   height: 400px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y:none;
+  position: relative;
+  overflow: auto;
+  li{list-style-type: none;}
+  ul{
+    margin:0;
+    padding: 0;
+    li{float: left;}
+  }
+
+  .dots{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    li{
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin: 0 4px;
+      
+      text-indent: -999em;
+      
+      border: 2px solid #fff;
+      border-radius: 6px;
+      
+      cursor: pointer;
+      opacity: .4;
+      
+      @include transition-duration(0.5s);
+      opacity: 0.5;
+      &.active{
+        background: #fff;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 // konten-atas
