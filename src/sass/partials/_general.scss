@@ -4,6 +4,9 @@ body{
   line-height: 20px;
 }
 
+.kanan{float: right;}
+.kiri{float: left;}
+
 // header
 #header{
   border-top:solid 5px $biru;
@@ -101,4 +104,13 @@ body{
 #footer{
   background: #444;
   color:#fff;
+  a{
+    margin-left: 5px;
+    color: inherit;
+    @include transition-duration(0.5s);
+    &:hover{
+      color: rgba(#fff,0.7)
+    }
+  }
+  i{font-size: 18px;}
 }
