@@ -101,6 +101,80 @@ body{
   h3,p{margin:0}
 }
 
+#konten-utama{
+  background: image-url('bg-content.png') bottom left no-repeat;
+  h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 100;
+    color:$biru;
+  }
+  ul{
+    padding:0;
+    margin:0;
+    // @include transition-duration(0.5);
+    // padding-bottom:15px;
+   
+
+    li{
+      @include transition-duration(0.5s);
+      list-style: none;
+      border-bottom: dashed 1px #ddd;
+      &:first-child{
+        border-bottom: none;
+         h1{
+          // @include transition-duration(0.5);
+          position:absolute;
+          font-size: 1.5em;
+          margin:0;
+          padding:10px;
+          top:100px;
+          background: #fff;
+          font-weight: 100;
+          
+          a{
+            @include transition-duration(0.5s );
+            text-decoration: none;
+            color:#444;
+          }
+          &:hover>a{
+            // @include transition-duration(0.5);
+            color: #000;
+          }
+          
+        }
+      }
+
+      a{
+        padding:5px 0px;
+        display: inline-block;
+        color:#444;
+        text-decoration: none;
+        &:hover{
+          color:#000;
+          
+        }
+      }
+      &:last-child{
+        border-bottom: none;
+        margin-bottom: 1.5em;
+      }
+      &:hover{
+        background: #eee;
+      }
+    }
+   
+  }
+
+  .meta{
+    background: #444;
+    color:#fff;
+    padding:5px 10px;
+    position:relative;
+    top:-5px;
+  }
+}
+
 #footer{
   background: #444;
   color:#fff;
