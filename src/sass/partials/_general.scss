@@ -46,14 +46,13 @@ body{
 
 // slider
 #slide{
-  // height: 400px;
-  // overflow-x: hidden;
-  // overflow-y:none;
+
   position: relative;
   overflow: auto;
   img{
     width: 100%;
   }
+
   li{list-style-type: none;}
   ul{
     margin:0;
