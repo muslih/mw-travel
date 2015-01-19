@@ -1850,11 +1850,11 @@ body {
 }
 
 #slide {
-  height: 400px;
-  overflow-x: hidden;
-  overflow-y: none;
   position: relative;
   overflow: auto;
+}
+#slide img {
+  width: 100%;
 }
 #slide li {
   list-style-type: none;
