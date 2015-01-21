@@ -1910,6 +1910,42 @@ body {
 #konten-atas h3, #konten-atas p {
   margin: 0;
 }
+#konten-atas h1 {
+  text-decoration: left;
+  font-weight: 100;
+  float: left;
+}
+#konten-atas h1 a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: #444;
+}
+#konten-atas h1 a:hover {
+  color: #000;
+}
+#konten-atas time, #konten-atas .post-meta, #konten-atas .entry-meta {
+  text-align: right;
+  float: right;
+  clear: right;
+}
+#konten-atas time i, #konten-atas .post-meta i, #konten-atas .entry-meta i {
+  font-size: 14px;
+  float: left;
+  margin-right: 10px;
+}
+#konten-atas time span, #konten-atas .post-meta span, #konten-atas .entry-meta span {
+  display: block;
+}
+#konten-atas time a, #konten-atas .post-meta a, #konten-atas .entry-meta a {
+  color: #444;
+  text-decoration: none;
+}
+#konten-atas time a:hover, #konten-atas .post-meta a:hover, #konten-atas .entry-meta a:hover {
+  text-decoration: underline;
+}
 
 #konten-utama {
   background: url('../img/bg-content.png?1421525671') bottom left no-repeat;
@@ -1977,6 +2013,10 @@ body {
   padding: 5px 10px;
   position: relative;
   top: -5px;
+}
+
+.widgettitle {
+  font-size: 1.5em !important;
 }
 
 #top-footer {
